@@ -14,5 +14,14 @@ public class FloatDouble {
 		System.out.println(num4);
 		System.out.println(1.2e3);
 
+		double num5 = 2.5;
+		double num6 = 10.0 / 4;
+
+		// if (Math.abs(num5 - num6) < 1e-10) {
+		// 	System.out.println("They are very close, almost same !");
+		// }
+		System.out.println(Math.abs(num5 - num6));
+		System.out.println(num5 == num6);
+
 	}
 }
