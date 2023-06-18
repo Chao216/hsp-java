@@ -17,6 +17,13 @@ public class Char {
 		System.out.println(f);
 		System.out.println(g);
 
+		char m = 'm';
+		char y = 'y';
+		char fe = 'f';
+		System.out.println((int)m);
+		System.out.println((int)y);
+		System.out.println((int)fe);
+
 	}
 
 		
