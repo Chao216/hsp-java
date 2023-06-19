@@ -10,5 +10,34 @@ public class ArithmeticOperator {
 		System.out.println(10 % 3); // get the remainder
 		System.out.println(-10 % 3);
 		System.out.println(10 % -3);
+
+
+		int i = 0;
+
+		while (i < 10) {
+			System.out.println("i = " + i);
+			i++;
+		}
+
+		int j = 0;
+
+		while (j < 10) {
+			System.out.println("j = " + j);
+			++j;
+		}
+
+		int k = 0;
+		int l = 0;
+
+		System.out.println("k = " + k);
+		System.out.println("l = " + l);
+
+		int front = ++k;  // first k = k +1, then assign to front
+		int back = l++;   // first assign to back, then l = l +1
+
+		System.out.println("front is now " + front);
+		System.out.println("k is now " + k);
+		System.out.println("back is  now " + back);
+		System.out.println("l is now " + l);
 	}
 }
