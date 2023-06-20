@@ -6,7 +6,7 @@ public class AriPrac01 {
 		System.out.println(i);
 
 		int j = 1;
-		j = ++j; // temp = j (1), temp = j +1 (2), j = temp (2)
+		j = ++j; // j = j +1 (2), then temp = j, j = temp (2)
 
 		System.out.println(j);
 	}
