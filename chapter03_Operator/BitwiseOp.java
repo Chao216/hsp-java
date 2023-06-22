@@ -39,6 +39,13 @@ public class BitwiseOp {
 		System.out.println("~b = " + b_reBin);
 
 
+		// >> move bits to the right
+
+		int a_right2 = a >> 2;
+		String a_right2Bin = Integer.toBinaryString(a_right2);
+		System.out.println(a_right2Bin);
+
+
 
 
 
