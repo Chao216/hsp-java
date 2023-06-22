@@ -41,9 +41,21 @@ public class BitwiseOp {
 
 		// >> move bits to the right
 
-		int a_right2 = a >> 2;
+		int a_right2 = a >> 2; // as a /2/2 divided by 2 twice
 		String a_right2Bin = Integer.toBinaryString(a_right2);
 		System.out.println(a_right2Bin);
+
+		// << move bits to the left, sign not changed
+
+		int b_left2 = b << 2; // multiply by 2 twice
+		String b_left2Bin = Integer.toBinaryString(b_left2);
+		System.out.println(b_left2Bin);
+
+		// logical right move >>> ignore sign
+
+		int a_LRM3 = a >>> 3;
+		String a_LRM3Bin = Integer.toBinaryString(a_LRM3);
+		System.out.println("a >>> 3 = " + a_LRM3Bin);
 
 
 
