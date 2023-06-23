@@ -19,7 +19,7 @@ public class Break01 {
 
 			System.out.println("sum is " + sum);
 
-			if (sum == stop) {
+			if (sum >= stop) {
 				break;
 			}
 
