@@ -9,6 +9,8 @@ public class DynaArray01 {
 		double[] scores;
 		scores = new double[5];
 
+		// you can also write double[] scores = new double[5];
+
 		for (int i = 0; i < scores.length; i ++){
 
 			System.out.println("please enter " + (i + 1) + "th student's score.");
