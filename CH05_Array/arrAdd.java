@@ -18,6 +18,24 @@ public class arrAdd{
 			System.out.println(newArr[i]);
 		}
 
+		current_len = 4;
+		int[] addFlex;
+
+		while (true) {
+			System.out.println("do you want to keep adding? y/n");
+
+			String ans = myScan.nextLine();
+
+			if (ans == "y") {
+
+				current_len++;
+				addFlex = new int[current_len];
+				
+
+
+			}
+		}
+
 
 	}
 }
