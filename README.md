@@ -19,4 +19,4 @@ int l = ++j; // step1 j = j + 1, step2 temp = j, step3 l = j
 
 ## evaluate String
 
-#### you shoudl use `String1.equals(String2)`, not `==`
+#### when you only want to compare value, not the address. you shoudl use `String1.equals(String2)`, not `==`
