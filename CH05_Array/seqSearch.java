@@ -9,7 +9,7 @@ public class seqSearch{
 
 		String tgt = myScan.nextLine();// if you want char next().charAt(0);
 
-		boolean found = false;
+		boolean found = false;// REMEMBEER this flip trick!
 
 		for (int i = 0; i < names.length; i++){
 			if (tgt.equals(names[i])){
