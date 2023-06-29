@@ -17,3 +17,6 @@ int l = ++j; // step1 j = j + 1, step2 temp = j, step3 l = j
 // Note! both i and j will be 2 after ++ operation !!!
 ```
 
+## evaluate String
+
+#### you shoudl use `String1.equals(String2)`, not `==`
