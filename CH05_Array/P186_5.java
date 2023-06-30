@@ -29,7 +29,7 @@ public class P186_5{
 		int maxIndex = 0;
 		int max = arr[0];
 
-		for (int i = 0; i< arr.length; i++){
+		for (int i = 0; i< arr.length; i++){// how to find max, default choose first, and compare, if later number is bigger, replace max with bigger number!
 
 			if( max < arr[i]){
 				max = arr[i];
