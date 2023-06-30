@@ -3,9 +3,12 @@ public class Method02{
 
 		int[][] scores = {{1,2,3},{4,5,6},{7,8,9}};
 
+		int[][] height = {{172,173,176},{182,161,153},{191,182,176}};
+
 		Exercise ex1 = new Exercise();
 
 		ex1.loopThrough(scores);
+		ex1.loopThrough(height);
 		
 	}
 }
