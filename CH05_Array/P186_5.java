@@ -7,6 +7,9 @@ public class P186_5{
 		System.out.println("how many elements you want for the array?");
 		int size = myScan.nextInt();
 
+		System.out.println("what number you want to expect?");
+		int expect = myScan.nextInt();
+
 		int[] arr = new int[size];
 
 		int sum = 0;
@@ -40,6 +43,22 @@ public class P186_5{
 
 		System.out.println("max is " + max);
 		System.out.println("index of max is " + maxIndex);
+
+		boolean exist = false;
+
+		for (int i = 0; i < arr.length; i++){
+
+			if (arr[i] == expect){
+				System.out.println("yes " + expect +" exists");
+				exist = true;
+				break;
+			}
+
+		}
+
+		if (!exist){
+			System.out.println("sorry " + expect + " doesn't exist!");
+		}
 
 	}
 }
