@@ -12,7 +12,7 @@ public class MethodObj{
 		Tool myTool = new Tool();
 
 		myTool.grow(myDog);
-		System.out.println("after call grow method    " + myDog.name+ " is now " + myDog.age + " years old!");
+		System.out.println("after call grow method    " + myDog.name+ " is now " + myDog.age + " years old!");// main stack is affected by grow method in class Tool.
 
 
 		
@@ -25,7 +25,7 @@ class Dog{
 }
 
 class Tool{
-	public void grow(Dog dogInstance){
+	public void grow(Dog dogInstance){ // same as array, object also use address copy, grow will affect main stack
 		dogInstance.age = dogInstance.age + 5;
 	}
 }
