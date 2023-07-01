@@ -1,12 +1,23 @@
+import java.util.Scanner;
+
 public class MethodEx01{
 	public static void main(String[] args) {
 
 		Tools mytool = new Tools();
 
+		Scanner myScan = new Scanner(System.in);
+
 		boolean ans = mytool.isEven(10);
 		System.out.println(ans);
 
-		mytool.customPrint(10,5,'$');
+		System.out.println("how many rows?");
+		int rows = myScan.nextInt();
+		System.out.println("how many columns");
+		int col = myScan.nextInt();
+		System.out.println("what char");
+		char char1 = myScan.next().charAt(0);
+
+		mytool.customPrint(rows,col,char1);
 		
 	}
 }
