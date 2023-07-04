@@ -10,6 +10,8 @@ public class overloadExercise {
 		System.out.println(myMeth.max(10,100));
 		System.out.println(myMeth.max(1.9, 0.13));
 		System.out.println(myMeth.max(1.9, 21.3,0.002));
+
+		System.out.println(myMeth.bigOfThree(1,100,0.1));
 		
 	}
 }
@@ -61,5 +63,10 @@ class Methods {
 				return c;
 			}
 		}
+	}
+
+	public double bigOfThree(double a, double b, double c){
+		double temp = a > b ? a : b;// if a is bigger, use a, otherwise use b
+		return temp > c ? temp : c; // if temp big, use temp, otherwise use c;
 	}
 }
