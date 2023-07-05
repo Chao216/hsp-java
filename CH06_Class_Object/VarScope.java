@@ -6,6 +6,7 @@ public class VarScope {
 		Metho meme = new Metho();
 		meme.test1();
 		meme.test2();
+		meme.speak();
 	}
 }
 
@@ -41,5 +42,15 @@ class Metho {
 
 		// double weight;
 		// System.out.println(weight);
+
+
+	}
+
+	String code = "Tiffany";
+
+	public void speak(){
+		String code = "Dipper";
+
+		System.out.println(code);
 	}
 }
