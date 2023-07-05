@@ -9,6 +9,8 @@ public class constructor {
 
 		System.out.println(per2.name + "  " + per2.age);
 
+		Dog dog1 = new Dog();
+
 		
 	}
 }
@@ -29,4 +31,11 @@ class Person {
 		System.out.println("second constrcutr is being executed!");
 		name = pName;
 	}
+
+	
+}
+
+
+class Dog {
+
 }
