@@ -7,6 +7,8 @@ public class This01 {
 		Dog d1 = new Dog("Snoppy",3);
 
 		d1.speak();
+
+		System.out.println(d1.hashCode() + "#############" + p1.hashCode());
 		
 	}
 }
@@ -39,5 +41,7 @@ class Dog {
 
 	public void speak(){
 		System.out.println("my name is " + name + ", and i am " + age + " years old.");
+		System.out.println(this.hashCode());
+
 	}
 }
