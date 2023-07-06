@@ -20,3 +20,5 @@ int l = ++j; // step1 j = j + 1, step2 temp = j, step3 l = j
 ## evaluate String
 
 #### when you only want to compare value, not the address. you shoudl use `String1.equals(String2)`, not `==`
+
+## `return` must be placed in the end of code block inside methods;
