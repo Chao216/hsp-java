@@ -27,6 +27,17 @@ public class bubbleSort {
 
 }
 
+class Dog {
+    String name;
+    int age;
+    // you can use Alt + Insert to create constructor !
+
+    public Dog(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+}
+
 
 class myTools {
     public void bubbleSort(int[] arr) {
