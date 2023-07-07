@@ -22,3 +22,9 @@ int l = ++j; // step1 j = j + 1, step2 temp = j, step3 l = j
 #### when you only want to compare value, not the address. you shoudl use `String1.equals(String2)`, not `==`
 
 ## `return` must be placed in the end of code block inside methods;
+
+some shortcuts in IDEA
+`Ctrl + Y` to delete line
+`Ctrl + D` to duplicate line
+`Ctrl + Alt + L` to reformat codes
+`Shift + F10` to execute codes!
