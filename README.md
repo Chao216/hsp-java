@@ -23,8 +23,8 @@ int l = ++j; // step1 j = j + 1, step2 temp = j, step3 l = j
 
 ## `return` must be placed in the end of code block inside methods;
 
-some shortcuts in IDEA
-`Ctrl + Y` to delete line
-`Ctrl + D` to duplicate line
-`Ctrl + Alt + L` to reformat codes
-`Shift + F10` to execute codes!
+<br/>some shortcuts in IDEA
+<br/>`Ctrl + Y` to delete line
+<br/>`Ctrl + D` to duplicate line
+<br/>`Ctrl + Alt + L` to reformat codes
+<br/>`Shift + F10` to execute codes!
