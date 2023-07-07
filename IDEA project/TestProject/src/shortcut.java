@@ -4,6 +4,7 @@ public class shortcut {
         Student chao = new Student("Chao", 27, 93.2);
 
 
+
     }
 }
 
