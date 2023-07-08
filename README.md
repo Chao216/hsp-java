@@ -28,3 +28,10 @@ int l = ++j; // step1 j = j + 1, step2 temp = j, step3 l = j
 <br/>`Ctrl + D` to duplicate line
 <br/>`Ctrl + Alt + L` to reformat codes
 <br/>`Shift + F10` to execute codes!
+
+|modifier|self|same package|child class|different package|
+|----|----|---|---|
+|public|x|x|x|x|
+|protected|x|x|x|o|
+|default|x|x|o|o|
+|private|x|o|o|o|
