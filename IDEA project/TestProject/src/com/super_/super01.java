@@ -5,6 +5,11 @@ public class super01 {
 
         B b = new B();
         b.hi();
+        b.fathermethod();
+        b.speak();
+        b.speak2();
+        b.speak3();
+
 
     }
 }

@@ -28,4 +28,8 @@ public class A {
     private void f4() {
         System.out.println("f4() method being called!");
     }
+
+    public void speak(){
+        System.out.println("Speaking from class A");
+    }
 }
