@@ -35,3 +35,38 @@ int l = ++j; // step1 j = j + 1, step2 temp = j, step3 l = j
 |protected|x|x|x|o|
 |default|x|x|o|o|
 |private|x|o|o|o|
+
+# polymorphic
+
+if Animal is a Super class, and Cat and Dog are sub class<br/>
+
+and we define a speak() seperately in 3 classes above<br/>
+
+```java
+public  void speak(){
+        System.out.println("Hi I am an animal!");
+    }
+
+public void speak(){
+        System.out.println("Hi, I am a cat!");
+    }
+
+public void speak(){
+        System.out.println("Hi, I am a Dog!");
+    }
+
+```
+
+if we do the follow 
+```java
+	Animal animal = new Cat();//编译类 Animal, 运行类Cat
+        animal.speak();
+        animal = new Dog(); //编译类还是ANmial, 运行类为Dog
+        animal.speak();
+        //Animal 是 Dog, Cat 的父类。
+
+```
+
+following results will show on screen 
+> Hi, I am a cat!<br/> Hi, I am a Dog!
+
