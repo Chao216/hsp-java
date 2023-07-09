@@ -26,4 +26,8 @@ public class B extends A {
     public void speak3(){
         super.speak();// muust use super to specify speak() from super class.
     }
+
+    public  void speak4(){
+        this.speak();
+    }
 }

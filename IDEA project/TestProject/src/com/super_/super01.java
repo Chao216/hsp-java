@@ -9,6 +9,7 @@ public class super01 {
         b.speak();
         b.speak2();
         b.speak3();
+        b.speak4();
 
 
     }
