@@ -70,3 +70,20 @@ if we do the follow
 following results will show on screen 
 > Hi, I am a cat!<br/> Hi, I am a Dog!
 
+
+# polymorphic in Java
+if we create super class `Animal`, and then make sub class `Tiger`, and `Sheep`<br/>
+same idea A super class `Food`, then sub class `Chicken`,`Grass`<br/>
+we can design method with parameters `feed(Animal animal, Food food)`. But we can pass in sub class as arguments<br/>
+such as `*.feed(sheep1,grass1)` where sheep1 , and grass1 from instances of subclass Sheep, and Grass
+```java
+
+public static void main(String[] args) {
+        Master Chiang = new Master("Chiang Kai-SHik");
+        Grass nzGrass = new Grass("fresh new zealand grass");
+        Sheep sheep1 = new Sheep("Shon");
+        Chiang.feed(sheep1,nzGrass);
+    }
+```
+
+
