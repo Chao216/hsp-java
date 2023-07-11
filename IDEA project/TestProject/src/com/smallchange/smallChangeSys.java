@@ -29,6 +29,8 @@ public class smallChangeSys {
             Date date = new Date();
             SimpleDateFormat SDF = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
+            String toWhom;
+
 
             switch (key) {
                 case 1:
@@ -51,7 +53,7 @@ public class smallChangeSys {
 
                     date = new Date();
 
-                    details += "\n get money\t" + money + "\t" + SDF.format(date) + "\t" + balance;
+                    details += "\nget money\t" + money + "\t" + SDF.format(date) + "\t" + balance;
 
 
                     break;
@@ -60,15 +62,21 @@ public class smallChangeSys {
                     System.out.print("amount of money you spent:");
                     money = scanner.nextDouble();
 
+
                     if (money > 0 && money <= balance) {
                         balance -= money;
                     } else {
                         System.out.println("check again, non negativity!, also make sure balance is enough !");
                         continue;
                     }
+                    System.out.print("Where did you spend the money?");
+                    toWhom = scanner.next();
+
+
+
 
                     date = new Date();
-                    details += "\n spent money\t" + money + "\t" + SDF.format(date) + "\t" + balance;
+                    details += "\n"+ toWhom+"\t" + money + "\t" + SDF.format(date) + "\t" + balance;
                     break;
                 case 4:
 //                    System.out.println("quiting now ----------");
