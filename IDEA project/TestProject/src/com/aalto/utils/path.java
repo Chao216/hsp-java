@@ -1,5 +1,7 @@
 package com.aalto.utils;
 
+import com.debug_.debug03;
+
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -17,22 +19,7 @@ public class path {
         }
         System.out.println();
 
-        for (int i = 0; i < arr.length; i++) {
-
-            System.out.print(arr[i] + "\t");
-
-        }
-
-        Arrays.sort(arr);
-
-        System.out.println();
-
-        for (int i = 0; i < arr.length; i++) {
-
-            System.out.print(arr[i] + "\t");
-
-        }
-
+        debug03.printarray(arr);
 
 
     }
