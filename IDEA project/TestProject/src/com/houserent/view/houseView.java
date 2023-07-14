@@ -24,6 +24,24 @@ public class houseView {
 
     }
 
+    public void deleteHouse(){
+        System.out.println("ARE YOU SURE YOU WANT TO DELETE A HOUSE ?");
+        System.out.println("PLEASE ENTER THE HOUSE ID THAT YOU WANT TO DELETE (-1 FOR GIVE UP): ");
+        int delID = Utility.readInt();
+        if (delID == -1){
+            System.out.println("YOU HAVE GIVEN UP DELETING A HOUSE.");
+            return;// exit the method
+        }
+        char choice = Utility.readConfirmSelection();
+        if (choice == 'Y'){
+            // for sure delete
+            hs.del(delID);
+        } else {
+            System.out.println("YOU HAVE CHOSEN TO NOT DELETE !");
+        }
+
+    }
+
     public void menu() {
         do {
             System.out.println("=====NOTE-BOARD HOUSE RENTING===== ");
@@ -47,6 +65,7 @@ public class houseView {
                     break;
                 case '3':
                     System.out.println("DELETE");
+                    deleteHouse();
                     break;
                 case '4':
                     System.out.println("MODIFY");

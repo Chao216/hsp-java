@@ -40,4 +40,29 @@ public class houseService {
 
         return false;
     }
+
+    public boolean del(int delID){
+        int index = -1;// by default choose -1
+        for (int i = 0; i <= houseNum; i++) {
+            if (houses[i]!= null && delID == houses[i].getId()){
+                index = i;// which means we did find the house
+            }
+
+        }
+
+        if (index == -1){
+            return false;// we didn't find such a house
+        }
+
+        for (int i = index; i <houseNum ; i++) {// from the one to be deleted to end of list
+            houses[i] = houses[i+1];// move to the left by one position
+
+
+        }
+        houses[houseNum] = null;
+        houseNum--;
+        return true;
+    }
+
+
 }
