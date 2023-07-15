@@ -9,37 +9,43 @@ public class houseView {
     private char ans;
     private houseService hs = new houseService(10);
 
-    public void listHouse(){
+    public void listHouse() {
         System.out.println("=======HOUSES LIST==========");
         System.out.println("============================");
         House[] houses = hs.list();// returned a houses array
         for (int i = 0; i < houses.length; i++) {
-            if(houses[i]!=null){
+            if (houses[i] != null) {
                 System.out.println(houses[i]);
             }
 
         }
 
 
-
     }
 
-    public void deleteHouse(){
+    public void deleteHouse() {
         System.out.println("ARE YOU SURE YOU WANT TO DELETE A HOUSE ?");
         System.out.println("PLEASE ENTER THE HOUSE ID THAT YOU WANT TO DELETE (-1 FOR GIVE UP): ");
         int delID = Utility.readInt();
-        if (delID == -1){
+        if (delID == -1) {
             System.out.println("YOU HAVE GIVEN UP DELETING A HOUSE.");
             return;// exit the method
         }
         char choice = Utility.readConfirmSelection();
-        if (choice == 'Y'){
+        if (choice == 'Y') {
             // for sure delete
             hs.del(delID);
         } else {
             System.out.println("YOU HAVE CHOSEN TO NOT DELETE !");
         }
 
+    }
+
+    public void exit() {
+        char ans = Utility.readConfirmSelection();
+        if (ans == 'Y') {
+            run = false;
+        }
     }
 
     public void menu() {
@@ -50,7 +56,7 @@ public class houseView {
             System.out.println("\t\t\t3. DELETE HOUSE");
             System.out.println("\t\t\t4. MODIFY HOUSE");
             System.out.println("\t\t\t5. HOUSE LIST");
-            System.out.println("\t\t\t5. EXIT");
+            System.out.println("\t\t\t6. EXIT");
             System.out.print("WHAT OPERATION YOU WANT TO PERFORM ? 1-6:   ");
 
             ans = Utility.readChar();
@@ -75,8 +81,9 @@ public class houseView {
                     listHouse();
                     break;
                 case '6':
-                    System.out.println("EXIT");
-                    run = false;
+//                    System.out.println("EXIT");
+//                    run = false;
+                    exit();
                     break;
                 default:
                     System.out.println("ERROR COMMAND !");
