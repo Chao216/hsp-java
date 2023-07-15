@@ -19,7 +19,7 @@ public class houseService {
     }
 
     public boolean add() {
-        if (houseNum < houses.length){
+        if (houseNum < houses.length) {
             System.out.println("Name : ");
             String ownerName = Utility.readString(28);
             System.out.println("phone number : ");
@@ -30,7 +30,7 @@ public class houseService {
             int rent = Utility.readInt();
             System.out.println("Status : ");
             String status = Utility.readString(10);
-            House newhouse = new House(0,ownerName,phoneNum,country,rent,status);
+            House newhouse = new House(0, ownerName, phoneNum, country, rent, status);
             houses[houseNum] = newhouse;
             houses[houseNum].setId(houseNum);
             houseNum++;
@@ -41,21 +41,21 @@ public class houseService {
         return false;
     }
 
-    public boolean del(int delID){
+    public boolean del(int delID) {
         int index = -1;// by default choose -1
         for (int i = 0; i <= houseNum; i++) {
-            if (houses[i]!= null && delID == houses[i].getId()){
+            if (houses[i] != null && delID == houses[i].getId()) {
                 index = i;// which means we did find the house
             }
 
         }
 
-        if (index == -1){
+        if (index == -1) {
             return false;// we didn't find such a house
         }
 
-        for (int i = index; i <houseNum ; i++) {// from the one to be deleted to end of list
-            houses[i] = houses[i+1];// move to the left by one position
+        for (int i = index; i < houseNum; i++) {// from the one to be deleted to end of list
+            houses[i] = houses[i + 1];// move to the left by one position
 
 
         }
@@ -63,6 +63,23 @@ public class houseService {
         houseNum--;
         return true;
     }
+
+    public House search(int searchID) {
+        int index = -1;// by default assume not exist
+        for (int i = 0; i < houseNum; i++) {
+            if (houses[i] != null && houses[i].getId() == searchID) {
+                return houses[i];
+
+            }
+
+        }
+        return null;
+    }
+
+//    public void updateHouse(int updateID){
+//        System.out.println("you are updating info for house ");
+//
+//    }
 
 
 }

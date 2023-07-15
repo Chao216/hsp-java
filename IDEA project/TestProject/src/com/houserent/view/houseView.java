@@ -48,6 +48,53 @@ public class houseView {
         }
     }
 
+    public void search() {
+        System.out.println("please enter the id of house you are searching for: ");
+        int searchID = Utility.readInt();
+        House res = hs.search(searchID);
+        System.out.println(res);
+
+    }
+
+    public void modify(){
+        System.out.println("Please enter the id of house you want to change info");
+        System.out.println("what is the id of house you want to update:");
+        int updateID = Utility.readInt();
+        House toModify = hs.search(updateID);
+        System.out.print("NAME " +toModify.getOwner()+" : ");
+        String newName = Utility.readString(10);
+        if(!"".equals(newName)){
+            toModify.setOwner(newName);
+        }
+
+        System.out.print("PHONE " +toModify.getPhone()+" : ");
+        int newPhone = Utility.readInt();
+        if(!"".equals(newPhone)){
+            toModify.setPhone(newPhone);
+        }
+
+        System.out.print("COUNTRY " +toModify.getLocation()+" : ");
+        String newLocation = Utility.readString(10);
+        if(!"".equals(newLocation)){
+            toModify.setLocation(newLocation);
+        }
+
+        System.out.print("RENT " +toModify.getRent()+" : ");
+        int newRent = Utility.readInt();
+        if(!"".equals(newRent)){
+            toModify.setRent(newRent);
+        }
+
+        System.out.print("STATUS " +toModify.getStatus()+" : ");
+        String newStatus = Utility.readString(10);
+        if(!"".equals(newStatus)){
+            toModify.setStatus(newStatus);
+        }
+
+
+
+    }
+
     public void menu() {
         do {
             System.out.println("=====NOTE-BOARD HOUSE RENTING===== ");
@@ -67,14 +114,17 @@ public class houseView {
                     hs.add();
                     break;
                 case '2':
-                    System.out.println("SEARCH");
+//                    System.out.println("SEARCH");
+                    search();
+
                     break;
                 case '3':
                     System.out.println("DELETE");
                     deleteHouse();
                     break;
                 case '4':
-                    System.out.println("MODIFY");
+//                    System.out.println("MODIFY");
+                    modify();
                     break;
                 case '5':
                     System.out.println("LIST");
