@@ -86,6 +86,16 @@ public static void main(String[] args) {
     }
 ```
 
+
+
 # Static variable and Static Method
 Static method can only access static varibale, mormal method can access both static and regular varibales.
+
+## sequence of running priority static extends
+1. super class static code block, varibale initialization
+1. child class static code block, varibale initializtaion
+1. super class non-static code block varibale initialization
+1. super class constructor
+1. child class non-static code block varibale initialization
+1. child class constructor
 
