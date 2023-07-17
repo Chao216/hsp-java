@@ -86,4 +86,6 @@ public static void main(String[] args) {
     }
 ```
 
+# Static variable and Static Method
+Static method can only access static varibale, mormal method can access both static and regular varibales.
 
