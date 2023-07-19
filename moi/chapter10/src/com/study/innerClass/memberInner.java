@@ -3,6 +3,10 @@ package com.study.innerClass;
 public class memberInner {
     public static void main(String[] args) {
         new MemberOut().formula1();
+        //how to create a inner class bedroom instance?
+        House house = new House();
+        House.Bedroom bd = house.new Bedroom();
+        System.out.println(bd.name);
     }
 }
 
@@ -25,5 +29,11 @@ class MemberOut {
     public  void formula1(){
         new MemberInner().speak();
         new MemberInner().showAddress();
+    }
+}
+
+class House{
+    class Bedroom{
+        String name = "This is a room for Stewie!";
     }
 }
