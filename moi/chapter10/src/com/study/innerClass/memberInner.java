@@ -16,9 +16,14 @@ class MemberOut {
         void speak() {
             System.out.println("name = " + name + "age=" + age);
         }
+        void showAddress(){
+            System.out.println(this.toString());
+            System.out.println(this.getClass());
+        }
     }
 
     public  void formula1(){
         new MemberInner().speak();
+        new MemberInner().showAddress();
     }
 }
