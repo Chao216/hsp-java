@@ -42,6 +42,12 @@ public class arrList {
             System.out.println(ele);
         }
 
+        for (Object num : arr){
+            System.out.println(num);
+        }
+
+       
+
 
     }
 }
