@@ -29,6 +29,18 @@ public class arrList {
             System.out.println(next);
 
         }
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        for (Object element: col){
+            System.out.println(element);
+        }
+        System.out.println();
+        int[] arr = {1,2,3,4,5,6,7,8,9,0};
+
+        for (int ele:arr){
+            System.out.println(ele);
+        }
 
 
     }
