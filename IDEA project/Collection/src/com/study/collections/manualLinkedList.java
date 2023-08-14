@@ -34,6 +34,37 @@ public class manualLinkedList {
             last = last.pre;
         }
 
+        // let us add something
+
+        Node dove = new Node("Dove");
+
+        banana.next = dove;
+        dove.next=camel;
+        camel.pre=dove;
+        dove.pre=banana;
+        first = apple;
+        last = camel;
+
+        while (true){
+            if (first == null){
+                break;
+            }
+            System.out.println(first);
+            first = first.next;
+        }
+
+        System.out.println("now backeards");
+
+        while (true){
+            if (last == null){
+                break;
+            }
+            System.out.println(last);
+            last = last.pre;
+        }
+
+
+
 
     }
 }
