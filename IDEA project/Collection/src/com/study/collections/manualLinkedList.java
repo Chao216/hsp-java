@@ -16,6 +16,8 @@ public class manualLinkedList {
 
         // let us loop through
 
+
+
         while (true){
             if (first == null){
                 break;
