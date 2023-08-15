@@ -28,6 +28,11 @@ public class Set3 {
             employee.selfclaim();
 
         }
+        // Note New String objects might point to the same address in CONSTANT Pool.
+        String str1 = new String("Hello");
+        String str2 = new String("Hello");
+        System.out.println(str1.hashCode());
+        System.out.println(str2.hashCode());
 
     }
 }
@@ -41,5 +46,10 @@ class Employee{
 
     public void selfclaim(){
         System.out.println("This is "+ name);
+    }
+
+    @Override
+    public String toString() {
+        return "Employee = " + name;
     }
 }
